@@ -8,133 +8,168 @@
   <style>
   @import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,800,900');
 
-  body, html {
-    font-family: 'Montserrat', sans-serif;
-  }
+body, html {
+  font-family: 'Montserrat', sans-serif;
+  background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(123, 31, 162, 0.25),
+      rgba(123, 31, 162, 0.25)
+    ),
+url('https://scstylecaster.files.wordpress.com/2017/12/instagrammable-pink-beauty-products.png')
+}
 
-  .container {
-    border: 2px solid #7B1FA2;
-    width: 70%;
-    margin: 0 auto;
-  /*   border-radius: 15px; */
-    overflow:auto;
-    clear:both;
-  }
+.container {
+  border: 2px solid #7B1FA2;
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+/*   border-radius: 15px; */
+  overflow:auto;
+  clear:both;
+  -webkit-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+box-shadow: 10px 10px 30px -8px rgba(0,0,0,0.75);
+}
 
-  #top-bar {
-    text-align: center;
-    background-color: #7B1FA2;
-    padding: 1rem;
-    color: #fff;
-    text-transform: uppercase;
-  }
+#top-bar {
+  text-align: left;
+  background-color: #7B1FA2;
+  color: #fff;
+  text-transform: uppercase;
+}
+#logo {
+  text-align: center;
+  font-size: 3rem;
+  padding: .8rem;
 
-  #cart {
-    float: left;
-    font-size: 1.5rem;
-    text-align: center;
-    padding-top: .7rem;
-  }
+}
+.fa-chess-queen {
+  padding: 1rem;
+   border: 7px solid white;
+  border-radius: 50%;
+}
+.menu {
+  display: inline-block;
+  padding-right: 7rem;
+  border: 1px solid #fff;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
 
-  #product {
-    padding-top: .7rem;
-    width: 70%;
-    margin: 0 auto;
-    display: block;
-  }
+#cart {
+  float: left;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 2rem;
 
-  .thumb {
-    height: 100px;
-    float: left;
-  }
-  .item-spec {
-    text-align: right;
-    padding-right: .5rem;
-    font-size: .7rem;
-    margin-bottom: 1.6rem;
-  }
-  #payment {
-    float: right;
-    width: 55%;
+}
 
-  }
+#product {
+  padding-top: .7rem;
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+}
 
-  .cards {
-    margin: 0 auto;
-    display: block;
-    width: 50%;
-    text-align: center;
-    padding-top: 2rem;
-  }
+.thumb {
+  height: 100px;
+  float: left;
+  padding-left: .5rem;
+}
+.item-spec {
+  text-align: right;
+  padding-right: .5rem;
+  font-size: .7rem;
+  margin-bottom: 1.6rem;
+}
+#payment {
+  float: right;
+  width: 55%;
 
-  #cc {float: left;}
+}
 
-  #paypal {float: right;}
+.cards {
+  margin: 0 auto;
+  display: block;
+  width: 50%;
+  text-align: center;
+  padding-top: 2rem;
+}
 
-  .card-type img {
-    width: 50px;
-  }
+#cc {float: left;}
 
+#paypal {float: right;}
 
-  #details-head {
-   margin: 1rem;
-    text-align: center;
-    font-weight: 600;
-    font-size: 1.2rem;
-     display: inline-block;
-    clear: both;
-    width: 80%;
-  }
-
-  .form {
-    padding-left: 1rem;
-    width: 90%;
-
-  }
-  input[type=text]{
-    font-size: .9rem;
-    padding: .5rem;
-    margin-bottom: .4rem;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-     width: 95%;
-  }
+.card-type img {
+  width: 50px;
+}
 
 
-  .input-icon { position: relative;
+#details-head {
+ margin: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+   display: inline-block;
+  clear: both;
+  width: 80%;
+}
 
-  }
+.form {
+  padding-left: 1rem;
+  width: 90%;
 
-  .input-icon input { text-indent: 30px;}
-  .fa-user, .fa-credit-card, .fa-calendar-alt, .fa-lock   {
-    position: absolute;
-    top: .8rem;
-    left: .5rem;
-    font-size: 1rem;
-  }
+}
+input[type=text]{
+  font-size: .9rem;
+  padding: .5rem;
+  margin-bottom: .4rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+   width: 95%;
+}
 
-  button {
-    margin-top: 2rem;
-    padding: .5rem .9rem;
-    font-size: .9rem;
-    border-radius: 5px;
-     display: inline;
-    width: 45%;
-    color: #fff;
-  }
 
-  #submit {
-    background-color: #7B1FA2;
-  }
+.input-icon { position: relative;
 
-  #cancel {
-    background-color: #000;
-  }
+}
+
+.input-icon input { text-indent: 30px;}
+.fa-user, .fa-credit-card, .fa-calendar-alt, .fa-lock   {
+  position: absolute;
+  top: .8rem;
+  left: .5rem;
+  font-size: 1rem;
+}
+
+button {
+  margin-top: 2rem;
+  padding: .5rem .9rem;
+  font-size: .9rem;
+  border-radius: 5px;
+   display: inline;
+  width: 45%;
+  color: #fff;
+}
+
+#submit {
+  background-color: #7B1FA2;
+}
+
+#cancel {
+  background-color: #000;
+}
   </style>
   <body>
     <div class="container">
 
-        <div id="top-bar">view your bag >   payment details > confirmation
+        <div id="top-bar">
+          <div id="logo"><i class="fas fa-chess-queen"></i></div>
+          <div class="menu top1">
+          view your bag
+          </div>
+          <div class="menu top2">payment details</div>  <div class="menu top3">confirmation</div>
 
 
 
@@ -222,6 +257,10 @@
     <button id="submit">Complete Order</button>
               <button id="cancel">Cancel</button>
         </div><!--payment -->
+
+
+
+
 
     </div><!--container-->
   </body>
