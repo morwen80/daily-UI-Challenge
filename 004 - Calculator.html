@@ -23,7 +23,7 @@ body {
   border: 1px solid grey;
   background-color: #BDBDBD;
   border-radius-top: 25px;
-    height: 110px;
+    height: 120px;
   opacity: 0.5;
 }
 
@@ -36,26 +36,33 @@ body {
 
 #sofar {
   padding-top: .5rem;
+  font-weight: 700;
 }
 
 #result {
   font-size: 4rem; 
+
 }
 
 .keys {
-  border: 1px solid grey;
+/*   border: 1px solid grey; */
 /*   margin: 1rem .5rem; */
+  color: #00796B;
+
 }
 .row {
-  font-family: 'Inconsolata', monospace;
+/*   font-family: 'Inconsolata', monospace; */
   display: inline-block;
-  padding: 1.2rem 1.2rem;
-  border: 1px solid grey;
-/*   border-radius: 10px; */
+  padding: .4rem 1.2rem;
   font-size: 1.8rem;
   width: 11%;
   text-align: center;
-  margin: 0 auto;
+ margin-bottom: 1rem;
+/*   border-bottom: 1px solid #fff; */
+}
+
+.two, .three, .four {
+/*    border-left: 1px solid #fff; */
 }
 </style>
 <body>
@@ -68,18 +75,31 @@ body {
   </div><!--calc-->
   <div class="keys">
     <div class="row one">C</div>
-    <div class="row one">()</div>
-    <div class="row one">%</div>
-    <div class="row one">/</div>
+    <div class="row two">()</div>
+    <div class="row three">%</div>
+    <div class="row four">/</div>
     
-    <div class="row two">7</div>
+    <div class="row one">7</div>
     <div class="row two">8</div>
-    <div class="row two">9</div>
-    <div class="row one">*</div>
+    <div class="row three">9</div>
+    <div class="row four">*</div>
+    
+    <div class="row one">4</div>
+    <div class="row two">5</div>
+    <div class="row three">6</div>
+    <div class="row four">+</div>
+    
+    <div class="row one">1</div>
+    <div class="row two">2</div>
+    <div class="row three">3</div>
+    <div class="row four">=</div>
+    
+    <div class="row one">0</div>
+    <div class="row two">000</div>
+    <div class="row three">±</div>
+    <div class="row four">.</div>
   </div><!--keys-->
 
-
-  
 </div><!--container-->
 </body>
 </html>
