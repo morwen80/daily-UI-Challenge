@@ -7,21 +7,22 @@
 body {
   font-family: 'Amiri', serif;
 }
-.calc {
-  width: 400px;
-  height: 650px;
+.container {
+  width: 392px;
+/*   height: 650px; */
   border: 2px solid grey;
   display: block;
   margin: 0 auto;
 /*   border-radius: 25px; */
-  background-color: #00BCD4;
-  background-image: linear-gradient(180deg, #4cbf93, #dcedc2); /* Standard syntax (must be last) */
+ background-color: #00BCD4;
+  background-image: linear-gradient(180deg, #4cbf93, #dcedc2); /* Standard syntax (must be last) */ 
 
 }
 
 #screen {
   border: 1px solid grey;
   background-color: #BDBDBD;
+  border-radius-top: 25px;
     height: 110px;
   opacity: 0.5;
 }
@@ -41,17 +42,21 @@ body {
   font-size: 4rem; 
 }
 
+.keys {
+  border: 1px solid grey;
+/*   margin: 1rem .5rem; */
+}
 .row {
   font-family: 'Inconsolata', monospace;
   display: inline-block;
-  padding: 1rem 1.5rem;
+  padding: 1.2rem 1.2rem;
   border: 1px solid grey;
-  border-radius: 10px;
-  font-size: 1.3rem;
-  margin: .5rem;
-  
+/*   border-radius: 10px; */
+  font-size: 1.8rem;
+  width: 11%;
+  text-align: center;
+  margin: 0 auto;
 }
-
 </style>
 <body>
 <div class="container">
@@ -60,14 +65,20 @@ body {
       <div id="sofar">5 * 2</div>
       <div id="result">10</div>
   </div>
+  </div><!--calc-->
   <div class="keys">
     <div class="row one">C</div>
     <div class="row one">()</div>
     <div class="row one">%</div>
     <div class="row one">/</div>
+    
+    <div class="row two">7</div>
+    <div class="row two">8</div>
+    <div class="row two">9</div>
+    <div class="row one">*</div>
   </div><!--keys-->
 
-</div>
+
   
 </div><!--container-->
 </body>
