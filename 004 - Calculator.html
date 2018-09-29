@@ -1,0 +1,74 @@
+<html>
+<head>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Amiri:400,700,700i|Inconsolata');
+
+body {
+  font-family: 'Amiri', serif;
+}
+.calc {
+  width: 400px;
+  height: 650px;
+  border: 2px solid grey;
+  display: block;
+  margin: 0 auto;
+/*   border-radius: 25px; */
+  background-color: #00BCD4;
+  background-image: linear-gradient(180deg, #4cbf93, #dcedc2); /* Standard syntax (must be last) */
+
+}
+
+#screen {
+  border: 1px solid grey;
+  background-color: #BDBDBD;
+    height: 110px;
+  opacity: 0.5;
+}
+
+
+#sofar, #result {
+  text-align: right;
+  padding-right: .5rem;
+  line-height: 125%;
+}
+
+#sofar {
+  padding-top: .5rem;
+}
+
+#result {
+  font-size: 4rem; 
+}
+
+.row {
+  font-family: 'Inconsolata', monospace;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  margin: .5rem;
+  
+}
+
+</style>
+<body>
+<div class="container">
+<div class="calc">
+    <div id="screen">
+      <div id="sofar">5 * 2</div>
+      <div id="result">10</div>
+  </div>
+  <div class="keys">
+    <div class="row one">C</div>
+    <div class="row one">()</div>
+    <div class="row one">%</div>
+    <div class="row one">/</div>
+  </div><!--keys-->
+
+</div>
+  
+</div><!--container-->
+</body>
+</html>
