@@ -7,14 +7,21 @@
 body {
   font-family: 'Amiri', serif;
  background-color: #f67280;
-  background-image: linear-gradient(180deg, #f8b195, #f67280); /* Standard syntax (must be last) */ 
+  background-image: linear-gradient(180deg, #f8b195, #f67280, #6C5B7B); /* Standard syntax (must be last) */ 
+/*   background: repeating-linear-gradient(
+  -55deg,
+#ffd3b5,
+  #ffd3b5 50px,
+  #ff8c94 50px,
+  #ff8c94 60px
+); */
 }
 .container {
   width: 392px;
   display: block;
   margin: 0 auto;
  background-color: #f67280;
-  background-image: linear-gradient(180deg, #f67280, #6C5B7B); /* Standard syntax (must be last) */ 
+/*   background-image: linear-gradient(180deg, #f67280, #6C5B7B);  */
 -webkit-box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.26);
 -moz-box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.26);
 box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.26);
@@ -24,7 +31,8 @@ box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.26);
 #screen {
   background-color: #355C7D;
   border-radius-top: 25px;
-  height: 120px;
+    height: 120px;
+/*   opacity: 0.5; */
   color: #f8b195;
 }
 
@@ -49,16 +57,20 @@ box-shadow: 10px 10px 21px -1px rgba(0,0,0,0.26);
   height: 2rem;
 }
 .keys {
+/*   border: 1px solid grey; */
+/*   margin: 1rem .5rem; */
   color: #ffdacc;
-  margin-top: .5rem;
+margin-top: .5rem;
 }
 .row {
+/*   font-family: 'Inconsolata', monospace; */
   display: inline-block;
   padding: .1rem 1.2rem;
   font-size: 2rem;
   width: 11%;
   text-align: center;
  margin-bottom: 1rem;
+/*   border-bottom: 1px solid #fff; */
 }
 
 footer {
@@ -66,6 +78,7 @@ footer {
   text-transform: uppercase;
   font-size: .8rem;
 }
+
 </style>
 <body>
 <div class="container">
