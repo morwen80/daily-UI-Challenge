@@ -3,7 +3,76 @@
   <head>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
+  <style>
+    @import url('https://fonts.googleapis.com/css?family=Cormorant');
+
+body {
+  background-color: #D8EDFE;
+}
+
+.challenge {
+  width: 350px;
+  color: #00395E;
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  font-size: 2rem;
+}
+#box {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+ 
+}
+
+.icon {
+  border: 1px solid grey;
+  border-radius: 25%;
+  background-color: #00395E;
+  height: 400px;
+  width: 400px;
+    position: relative;
+ }
+
+.fa-coffee {
+  font-size: 13rem;
+  color: #95BBD2;
+  margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  text-shadow: 4px 4px 5px #747474;
+  z-index:1;
+}
+
+.fa-code {
+  z-index:2;
+   position: absolute;
+    margin: 0;
+    top: 32%;
+    left: 33%;
+  color: #00395E;
+  font-size: 4.5rem;
+}
+  </style>
   
   <body>
+    <div class="challenge">
+Daily UI Challenge
+  <br>
+  #005: App Icon
+  
+</div>
+<div id="box">
+  <div class="icon">
+ <i class="fas fa-coffee"></i>
+<i class="fa fa-code"></i>
+    
+  </div>
+ 
+</div>
+
+
   </body>
 </html>
