@@ -4,8 +4,73 @@
   </head>
   
   <style>
+    @import url('https://fonts.googleapis.com/css?family=Alice');
+
+body, html {
+  font-family: 'Alice', serif;
+}
+#box {
+  border-radius: 10px;
+  width: 450px;
+  height: 1000px;
+  border: 1px solid grey;
+  margin: 0 auto;
+}
+.user {
+  background-color: #000;
+  color: #fff;
+  padding: .8rem;
+}
+
+#pic img {
+border-radius: 50%;
+width: 220px;
+  height: 220px;
+border: 2px solid grey;
+  margin: 0 auto;
+  display: block;
+}
+
+#name {
+  text-transform: uppercase;
+  text-align: left;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#touch {
+  display: inline-block;
+  width: 100%;
+}
+#follow {
+  background-color: green;
+  color: black;
+  float: left;
+  width: 50%;
+}
+
+#message {
+  background-color: orange;
+  color: black;
+  float: right;
+  width: 50%;
+}
   </style>
   
   <body>
+     <div id="box">
+  <div class="user">
+    <div id="pic">
+      <img src="http://images.8tracks.com/cover/i/009/891/842/Untitled-1-1821.jpg">
+    </div>
+    <div id="name">Wade W. Wilson</div>
+    <div id="touch">
+      <div id="follow">follow</div>
+      <div id="message">message</div>
+    </div>
+    
+  </div><!--user-->
+  
+</div>
   </body>
 </html>
