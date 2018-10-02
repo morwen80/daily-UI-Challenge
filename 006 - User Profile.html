@@ -12,6 +12,7 @@ body, html {
 
 body, html {
   font-family: 'Montserrat', sans-serif;
+  background-color: #E3F5D9;
 }
 #box {
   border-radius: 10px;
@@ -20,18 +21,17 @@ body, html {
   margin: 0 auto;
 }
 .user {
-  background-color: #000;
+  background-color: #fff;
   border-radius: 10px;
   padding-top: 1rem;
-  color: #fff;
+  color: #6A6E71;
 /*   padding: .8rem; */
 }
 
 #pic img {
-border-radius: 50%;
+border-radius: 25%;
 width: 220px;
   height: 220px;
-border: 2px solid grey;
   margin: 0 auto;
   display: block;
 }
@@ -39,14 +39,25 @@ border: 2px solid grey;
 #name {
   text-transform: uppercase;
   text-align: left;
-  padding: 1rem 0 1rem .8rem;
+  padding: 1rem 0 .6rem .8rem;
   font-size: 1.2rem;
   font-weight: 900;
+}
+
+#where {
+  padding: .3rem .8rem;
+  font-size: .8rem;
+}
+
+.fa-map-marker-alt {
+  font-size: 1rem;
+  padding-right: .4rem;
 }
 
 #touch {
   display: inline-block;
   width: 100%;
+  margin-top: .5rem;
 }
 
 .touchme {
@@ -57,14 +68,15 @@ border: 2px solid grey;
   text-align: center;
 }
 #follow {
-  background-color: green;
+  background-color: #D9B28E;
   float: left; 
 }
 
 #message {
-  background-color: orange;
+  background-color: #E33A4B;
   float: right;
 }
+
   </style>
   
   <body>
@@ -75,7 +87,8 @@ border: 2px solid grey;
     </div>
     <div id="name">Wade W. Wilson</div>
     <div id="where">
-      <i class="fas fa-map-marker-alt"> London</i>
+      <i class="fas fa-map-marker-alt"></i> London, United Kingdom
+      <span id="online">online</span>
     </div>
     <div id="touch">
       <div class="touchme" id="follow">follow</div>
