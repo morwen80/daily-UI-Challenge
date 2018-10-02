@@ -1,23 +1,28 @@
 
 <html>
   <head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   </head>
   
   <style>
     @import url('https://fonts.googleapis.com/css?family=Alice');
 
 body, html {
-  font-family: 'Alice', serif;
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,900');
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
 }
 #box {
   border-radius: 10px;
   width: 450px;
   height: 1000px;
-  border: 1px solid grey;
   margin: 0 auto;
 }
 .user {
   background-color: #000;
+  border-radius: 10px;
+  padding-top: 1rem;
   color: #fff;
 /*   padding: .8rem; */
 }
@@ -36,6 +41,7 @@ border: 2px solid grey;
   text-align: left;
   padding: 1rem 0 1rem .8rem;
   font-size: 1.2rem;
+  font-weight: 900;
 }
 
 #touch {
@@ -44,10 +50,11 @@ border: 2px solid grey;
 }
 
 .touchme {
-  width: 48.6%;
+  width: 50%;
   color: black;
- padding: .8rem 0 .8rem .3rem;
+ padding: .8rem 0;
   text-transform: uppercase;
+  text-align: center;
 }
 #follow {
   background-color: green;
@@ -61,15 +68,18 @@ border: 2px solid grey;
   </style>
   
   <body>
-     <div id="box">
+   <div id="box">
   <div class="user">
     <div id="pic">
       <img src="http://images.8tracks.com/cover/i/009/891/842/Untitled-1-1821.jpg">
     </div>
     <div id="name">Wade W. Wilson</div>
+    <div id="where">
+      <i class="fas fa-map-marker-alt"> London</i>
+    </div>
     <div id="touch">
-      <div id="follow">follow</div>
-      <div id="message">message</div>
+      <div class="touchme" id="follow">follow</div>
+      <div class="touchme" id="message">message</div>
     </div>
     
   </div><!--user-->
