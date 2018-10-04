@@ -16,7 +16,7 @@ html, body {
   background: linear-gradient(#e66465, #9198e5);
   border: 2px solid grey;
   width: 340px;
-  height: 600px;
+  height: 660px;
   margin: 0 auto;
   border-radius: 10px;
   -webkit-box-shadow: 22px 36px 40px -19px rgba(0,0,0,0.75);
@@ -35,7 +35,7 @@ html, body {
 
 
 #login-message {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   padding-top: 1rem;
 width: 100%;
   padding-bottom: 1.2rem;
@@ -48,8 +48,8 @@ width: 100%;
   color: white;
 }
 #login {
-  float: right;
-color: grey;
+float: right;
+color: #777677;
 padding-right: 2.5rem;}
 
 #enter {
@@ -61,8 +61,8 @@ padding-right: 2.5rem;}
 input[type=text] {
   width: 90%;
   border: 1px solid #fff;
-  padding: .6rem;
-  font-size: 1rem;
+  padding: .5rem;
+  font-size: .8rem;
   background: none;
   margin-bottom: .5rem;
   color: #fff;
@@ -80,16 +80,45 @@ input[type=checkbox] {
 
 #remember {
   font-size: .8rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 button {
   display: block;
   margin: 0 auto;
   text-transform: uppercase;
-  padding: .7rem .7rem;
-  font-size: 1rem;
+  padding: .5rem .7rem;
+  font-size: .8rem;
   width: 80%;
   color: #fff;
+}
+
+#or {
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 1rem;
+  font-size: .8rem;
+}
+
+#or:before,
+#or:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 35%;
+  padding: 0 .5rem;
+}
+
+#or:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+#or:after {
+  left: 0.5em;
+  margin-right: -50%;
 }
 
 #google {
@@ -100,14 +129,14 @@ button {
 #facebook {
    background-color: blue;
 }
+
   </style>
 
   <body>
     <div id="container">
-  
-  <div id="user">
-    <img src="https://image.freepik.com/vettori-gratuito/icona-di-cupcake-kawaii-con-stelle-intorno_24911-13352.jpg">
-  </div>
+ 
+  <div id="user"><img src="https://image.freepik.com/vettori-gratuito/icona-di-cupcake-kawaii-con-stelle-intorno_24911-13352.jpg"></div>
+ 
   
   <div id="login-message">
     <div id="signup">Sign Up</div>
@@ -119,17 +148,22 @@ button {
 <br>
 <input type="text" id="password" placeholder="Password"></input>
 <br>
+<input type="text" id="email" placeholder="Email"></input>
+<br>
+<input type="text" id="email2" placeholder="Confirm Email"></input>
+<br>
 
 <div id="remember">
 <input type="checkbox" checked="checked">Remember me
 </div>
 </div><!--enter-->
 
-  <button id="google">Sign Up with Google</button>
+<div id ="or"><span>or</span></div>
+
+<button id="google">Sign Up with Google</button>
 <button id="facebook">Sign Up with Facebook</button>
 </div>
-  
-</div>
+
 
   </body>
 </html>
