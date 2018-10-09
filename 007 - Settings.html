@@ -4,10 +4,118 @@
 </head>
 
 <style>
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700");
+
+html, body {
+  margin-top: 0;
+  font-family: Montserrat, sans-serif;
+  
+}
+#phone {
+  position: absolute;
+}
+
+.design {
+  position: relative;
+  z-index: -1;
+  background-color: #D7E2DA;
+  top: 186px;
+  left: 392px;
+  width: 478px;
+  height: 847px;
+}
+
+#back2menu {
+  padding: .5rem 0 0 .5rem;
+  color: #9E937F;
+  height: 2rem;
+}
+
+#head-bg {
+  background-color: #D0CEC1;
+  width: 100%;
+  height: 17%;
+/*   background-image: linear-gradient(#AFB42B, yellow); */
+}
+
+#head-pic img {
+  border-radius: 50%;
+  width: 150px;
+  padding: .6rem;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-between;
+  margin-top: 2.5rem;
+}
+
+.square {
+  width: 33.3%;
+  height: 120px;
+/*   margin: .5rem; */
+/*   border-radius: 5px; */
+  text-align: center;
+  padding-top: .5rem;
+  color: #fff;
+  background-color: #9E937F;
+}
+
+.tag {
+    padding-top: .7rem;
+  font-size: .8rem;
+  text-transform: uppercase;
+}
+.fa-question-circle, .fa-user, .fa-key, .fa-comments, .fa-bell, .fa-user-friends {
+  padding-top: .5rem;
+  font-size: 3rem;
+}
+
+.sq1, .sq3, .sq5 {
+  background-color: #ECC9C7;
+}
 </style>
 
 <body>
+  <img id="phone" src="https://purepng.com/public/uploads/large/purepng.com-phone-in-handphone-in-handhandheldpersonal-computermobileholding-smart-phonecell-phone-in-hand-1701528365603pzisw.png">
 
+<div class="design">
+  <div id="back2menu"><i class="fas fa-arrow-circle-left"></i> Settings</div>
+  
+  <div id="head-bg">
+    <div id="head-pic">
+      <img src="https://pbs.twimg.com/profile_images/683490330532917248/6gUkOXrE_400x400.jpg">
+    </div>
+  </div>
+  
+  <div class="menu">
+    
+    <div class="square sq1"><i class="fas fa-user"></i>
+      <div class="tag">user</div>
+    </div>
+    
+    <div class="square sq2"><i class="fas fa-key"></i>
+      <div class="tag">account</div>
+    </div>
+    <div class="square sq3"><i class="fas fa-comments"></i>
+      <div class="tag">chats</div>
+    </div>
+    <div class="square sq4"><i class="fas fa-bell"></i>
+       <div class="tag">notifications</div>
+    </div>
+    <div class="square sq5">
+      <i class="fas fa-user-friends"></i>
+       <div class="tag">invite</div>
+    </div>
+    
+    <div class="square sq6"><i class="far fa-question-circle"></i>
+      <div class="tag">help</div>
+    </div>
+    
+  </div><!--menu>
+</div><!--design-->
 </body>
 
 </html>
